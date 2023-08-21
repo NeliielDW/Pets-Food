@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-title: 'Dancing Script', cursive;
+    --font-text: 'Montserrat', sans-serif;
+    --color-dark: #222222;
+    --color-important: #902304;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--color-dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    color: var(--color-important)
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-family: var(--font-title);
+}
+
+.logo img {
+    width: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 4rem;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    padding-bottom: 3px; 
+    transition: padding-bottom 0.3s ease; 
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 3px;
+    background-color: var(--color-important);
+    border-radius: 1rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+  
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.connect {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.connect a {
+    color: var(--color-dark);
+    transition: all 0.5s ease;
+}
+
+.connect a:hover {
+    transform: scale(1.2);
+    color: var(--color-important);
+}
