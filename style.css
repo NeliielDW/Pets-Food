@@ -89,7 +89,7 @@ nav a:hover::after {
 /* BANNER */
 
 .banner {
-    background-image: url(/Img/banner.jpg);
+    background-image: url(Img/banner.jpg);
     background-size: cover;
     background-position: center;
     height: 30rem;
@@ -156,4 +156,74 @@ nav a:hover::after {
     color: var(--color-important);
     font-family: var(--font-title);
     font-size: 2rem;
+}
+
+/* POPULAR */
+
+.popular {
+    margin-top: 6rem;
+    
+    background-color: #f8f8f8;
+}
+
+.popular h2 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.popular-card {
+    background-color: var(--color-light);
+    border-radius: 1rem;
+}
+
+.img-card img {
+    height: 12rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.text-card {
+    padding-left: 0.5rem;
+    margin-top: -0.5rem;
+    padding-bottom: 1rem;
+}
+
+.text-card p {
+   color: red;
+   font-weight: 500;
+   font-size: 1.2rem;
+   padding-bottom: 0.8rem;
+}
+
+.text-card p span {
+    color: grey;
+    font-weight: 200;
+    text-decoration:line-through;
+    font-size: 1rem;
+}
+
+.text-card button {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-important);
+    color: var(--color-light);
+    transition: all ease 0.5s;
+}
+
+.text-card button:hover {
+    transform: scale(1.2);
 }
